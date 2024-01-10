@@ -1,0 +1,22 @@
+<body>
+  <script>
+    let images = ##IMAGES##
+    function set_background(url) {
+      document.querySelector("body").setAttribute("style", `background-image: url("${url}"); background-repeat: no-repeat; background-position: center;`)
+    }
+    set_background(images[0]);
+    let index = 1
+    function autoPlay() {
+      setTimeout(() => {
+        set_background(images[index])
+        console.log(index, images)
+        index = (index + 1)
+        if (index < images.length) {
+          autoPlay()
+        }
+      }, ##TEMPS_SECONDES_SLIDES## * 1000)
+    }
+
+    autoPlay()
+  </script>
+</body>
