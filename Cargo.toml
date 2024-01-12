@@ -2,6 +2,11 @@
 name = "pechakucha-gen"
 version = "0.1.0"
 edition = "2021"
+license = "MIT"
+description = "Generate a pechakucha presentation from a directory of images in Rust!"
+documentation = "https://github.com/Seboran/pechakucha-gen"
+repository = "https://github.com/Seboran/pechakucha-gen"
+readme = "README.md"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
